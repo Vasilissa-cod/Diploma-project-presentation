@@ -514,4 +514,5 @@ https://miro.com/app/board/uXjVICd_Rwg=/
 
 ## Презентация
 
-Интерактивная HTML-презентация доступна по адресу: [Открыть презентацию](index.html)
+Интерактивная HTML-презентация доступна по адресу: [Открыть презентацию](https://vasilissa-cod.github.io/Diploma-project-presentation/)
+
