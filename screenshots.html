@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение: Скриншоты тестирования FatSecret</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .back-link {
+            display: inline-block;
+            background: white;
+            color: #7c3aed;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            background: #7c3aed;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+        }
+
+        .screenshot-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .screenshot-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .screenshot-header {
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .screenshot-header h3 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .screenshot-header p {
+            opacity: 0.9;
+            font-size: 0.95em;
+        }
+
+        .screenshot-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+
+        .screenshot-placeholder {
+            width: 100%;
+            height: 350px;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 1.1em;
+        }
+
+        .screenshot-description {
+            padding: 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .badge-func {
+            background: #4caf50;
+            color: white;
+        }
+
+        .badge-perf {
+            background: #2196f3;
+            color: white;
+        }
+
+        .badge-security {
+            background: #ff9800;
+            color: white;
+        }
+
+        .badge-ux {
+            background: #9c27b0;
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .screenshots-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Вернуться к презентации</a>
+        
+        <h1>📸 Приложение: Скриншоты тестирования</h1>
+
+        <div class="screenshots-grid">
+            <!-- Screenshot 1: Registration -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>1. Регистрация пользователя</h3>
+                    <p>TC001: Создание нового аккаунта</p>
+                </div>
+                <img src="images/01-registration.png" alt="Регистрация" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="screenshot-placeholder" style="display: none;">Добавьте изображение: images/01-registration.png</div>
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <p style="margin-top: 10px;">Форма создания аккаунта с полем email и кнопкой "Continue". Доступна также авторизация через Google.</p>
+                </div>
+            </div>
+
+            <!-- Screenshot 2: Onboarding -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>2. Настройка профиля (Onboarding)</h3>
+                    <p>Заполнение персональных данных</p>
+                </div>
+                <img src="images/02-onboarding.png" alt="Onboarding" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="screenshot-placeholder" style="display: none;">Добавьте изображение: images/02-onboarding.png</div>
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <span class="badge badge-ux">UX</span>
+                    <p style="margin-top: 10px;">Настройка профиля: рост, дата рождения, уровень активности, цель диеты и целевой вес.</p>
+                </div>
+            </div>
+
+            <!-- Screenshot 3: RDI Calculation -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>3. Расчёт рекомендуемой нормы калорий (RDI)</h3>
+                    <p>Автоматический расчёт на основе данных</p>
+                </div>
+                <img src="images/03-rdi.png" alt="RDI" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="screenshot-placeholder" style="display: none;">Добавьте изображение: images/03-rdi.png</div>
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <p style="margin-top: 10px;">Система рассчитала RDI = 2200 калорий в день на основе пола, возраста, роста, уровня активности и целей.</p>
+                </div>
+            </div>
+
+            <!-- Screenshot 4: Sign In -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>4. Авторизация пользователя</h3>
+                    <p>TC002: Вход в систему</p>
+                </div>
+                <img src="images/04-signin.png" alt="Sign In" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="screenshot-placeholder" style="display: none;">Добавьте изображение: images/04-signin.png</div>
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <span class="badge badge-security">Безопасность</span>
+                    <p style="margin-top: 10px;">Форма входа с полями email/имя пользователя и пароль. Опция "Запомнить меня" и восстановление пароля.</p>
+                </div>
+            </div>
+
+            <!-- Screenshot 5: Food Diary -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>5. Дневник питания</h3>
+                    <p>TC003, TC004: Добавление продуктов</p>
+                </div>
+                <img src="images/05-food-diary.png" alt="Food Diary" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="screenshot-placeholder" style="display: none;">Добавьте изображение: images/05-food-diary.png</div>
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <p style="margin-top: 10px;">Дневник питания с разделами: Завтрак, Обед, Ужин. Отображение калорий, жиров, углеводов и белков.</p>
+                </div>
+            </div>
+
+            <!-- Screenshot 6: Dashboard -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>6. Главная страница (Dashboard)</h3>
+                    <p>Обзор активности пользователя</p>
+                </div>
+                <img src="images/06-dashboard.png" alt="Dashboard" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="screenshot-placeholder" style="display: none;">Добавьте изображение: images/06-dashboard.png</div>
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <span class="badge badge-ux">UX</span>
+                    <p style="margin-top: 10px;">Главная страница My FatSecret: дата, потреблённые калории, текущий вес, цель и лента активности.</p>
+                </div>
+            </div>
+
+            <!-- Screenshot 7: User Profile -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>7. Профиль пользователя</h3>
+                    <p>Страница профиля в Community</p>
+                </div>
+                <img src="images/07-profile.png" alt="Profile" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="screenshot-placeholder" style="display: none;">Добавьте изображение: images/07-profile.png</div>
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <p style="margin-top: 10px;">Профиль пользователя: аватар, количество постов, подписчики, история веса (начальный, текущий, целевой).</p>
+                </div>
+            </div>
+
+            <!-- Screenshot 8: Core Web Vitals -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>8. Core Web Vitals (Chrome DevTools)</h3>
+                    <p>Метрики производительности</p>
+                </div>
+                <img src="images/08-web-vitals.png" alt="Core Web Vitals" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="screenshot-placeholder" style="display: none;">Добавьте изображение: images/08-web-vitals.png</div>
+                <div class="screenshot-description">
+                    <span class="badge badge-perf">Производительность</span>
+                    <p style="margin-top: 10px;">Проверка через Chrome DevTools Performance: LCP = 0.86s (хорошо), CLS = 0 (отлично).</p>
+                </div>
+            </div>
+
+            <!-- Screenshot 9: Kanban Board -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>9. Kanban-доска тест-плана (Miro)</h3>
+                    <p>Управление тест-кейсами</p>
+                </div>
+                <img src="images/09-kanban-miro.png" alt="Kanban Miro" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="screenshot-placeholder" style="display: none;">Добавьте изображение: images/09-kanban-miro.png</div>
+                <div class="screenshot-description">
+                    <span class="badge badge-ux">Управление</span>
+                    <p style="margin-top: 10px;">Kanban-доска в Miro: Product Backlog, Sprint Backlog, In Progress, Testing, Done. Визуализация процесса тестирования.</p>
+                </div>
+            </div>
+
+            <!-- Screenshot 10: Homepage -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>10. Главная страница FatSecret</h3>
+                    <p>Лендинг приложения</p>
+                </div>
+                <img src="images/10-homepage.png" alt="Homepage" class="screenshot-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="screenshot-placeholder" style="display: none;">Добавьте изображение: images/10-homepage.png</div>
+                <div class="screenshot-description">
+                    <span class="badge badge-ux">UX</span>
+                    <p style="margin-top: 10px;">Главная страница fatsecret.com с призывом к действию и описанием возможностей приложения.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Тестирование веб-приложения FatSecret — 2025</p>
+            <p style="margin-top: 10px;">Пухтель Лия Николаевна</p>
+        </div>
+    </div>
+</body>
+</html>
+

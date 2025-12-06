@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
             color: #333;
             overflow: hidden;
         }
@@ -54,28 +54,28 @@
 
         h1 {
             font-size: 3em;
-            color: #667eea;
+            color: #7c3aed;
             margin-bottom: 30px;
             text-align: center;
         }
 
         h2 {
             font-size: 2.5em;
-            color: #764ba2;
+            color: #a855f7;
             margin-bottom: 25px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #7c3aed;
             padding-bottom: 10px;
         }
 
         h3 {
             font-size: 1.8em;
-            color: #667eea;
+            color: #7c3aed;
             margin: 20px 0 15px 0;
         }
 
         .title-slide {
             text-align: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
             color: white;
             padding: 80px;
         }
@@ -115,7 +115,7 @@
             content: "✓";
             position: absolute;
             left: 0;
-            color: #667eea;
+            color: #7c3aed;
             font-weight: bold;
             font-size: 1.3em;
         }
@@ -128,7 +128,7 @@
         }
 
         .stat-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
             color: white;
             padding: 30px;
             border-radius: 15px;
@@ -159,7 +159,7 @@
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #7c3aed;
             transition: transform 0.3s;
         }
 
@@ -186,13 +186,13 @@
             cursor: pointer;
             font-size: 1em;
             font-weight: bold;
-            color: #667eea;
+            color: #7c3aed;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             transition: all 0.3s;
         }
 
         .nav-btn:hover {
-            background: #667eea;
+            background: #7c3aed;
             color: white;
             transform: translateY(-2px);
         }
@@ -210,7 +210,7 @@
             padding: 10px 20px;
             border-radius: 20px;
             font-weight: bold;
-            color: #667eea;
+            color: #7c3aed;
             z-index: 1000;
         }
 
@@ -304,7 +304,6 @@
                     <li>Функциональное тестирование</li>
                     <li>Нефункциональное тестирование</li>
                     <li>Автоматизированное тестирование</li>
-                    <li>Нагрузочное тестирование</li>
                 </ul>
             </div>
         </div>
@@ -329,11 +328,9 @@
             <div style="font-size: 1.3em; line-height: 1.8; margin-top: 30px;">
                 <p><strong>FatSecret</strong> — бесплатное приложение для отслеживания питания и подсчета калорий.</p>
                 <div style="margin-top: 40px;">
-                    <h3>Основные платформы:</h3>
+                    <h3>Тестируемая платформа:</h3>
                     <ul>
-                        <li>Веб-приложение: www.fatsecret.com</li>
-                        <li>Мобильное приложение для Android</li>
-                        <li>Мобильное приложение для iOS</li>
+                        <li>Веб-приложение: <a href="https://foods.fatsecret.com/" target="_blank" style="color: #7c3aed;">https://foods.fatsecret.com/</a></li>
                     </ul>
                 </div>
                 <div style="margin-top: 40px; padding: 20px; background: #f0f0f0; border-radius: 10px;">
@@ -389,15 +386,14 @@
                 <h3>Многоуровневый подход:</h3>
                 <ul style="font-size: 1.1em;">
                     <li>Функциональное тестирование основных возможностей</li>
-                    <li>Нефункциональное тестирование (производительность, безопасность)</li>
+                    <li>Нефункциональное тестирование (безопасность, совместимость)</li>
                     <li>Автоматизированное тестирование критических путей</li>
                     <li>Мануальное тестирование для проверки UX</li>
                 </ul>
-                <div style="margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;">
+                <div style="margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%); color: white; border-radius: 10px;">
                     <h3 style="color: white; margin-bottom: 15px;">Приоритизация:</h3>
                     <p>Критические функции → Автоматизированное тестирование (Java, Selenide, JUnit 5)</p>
-                    <p>Производительность → Нагрузочное тестирование (Apache JMeter)</p>
-                    <p>Совместимость и безопасность → Мануальное тестирование</p>
+                    <p>Безопасность и совместимость → Мануальное тестирование</p>
                 </div>
             </div>
         </div>
@@ -423,11 +419,7 @@
                     <p>Генерация отчётов</p>
                 </div>
                 <div class="tool-item">
-                    <h3>⚡ Apache JMeter</h3>
-                    <p>Нагрузочное тестирование</p>
-                </div>
-                <div class="tool-item">
-                    <h3>🔍 Edge DevTools</h3>
+                    <h3>🔍 Chrome DevTools</h3>
                     <p>Технический анализ</p>
                 </div>
                 <div class="tool-item">
@@ -470,7 +462,6 @@
                     <li>Поиск продуктов</li>
                     <li>Отслеживание веса</li>
                     <li>Адаптивность мобильной версии</li>
-                    <li>Производительность загрузки (Core Web Vitals)</li>
                     <li>Безопасность соединения</li>
                 </ul>
             </div>
@@ -504,65 +495,28 @@
             </div>
         </div>
 
-        <!-- Slide 10: Нагрузочное тестирование -->
-        <div class="slide">
-            <h2>Нагрузочное тестирование</h2>
-            <div style="margin-top: 30px; font-size: 1.2em;">
-                <div class="two-column">
-                    <div>
-                        <h3>Тест 1: Нагрузочное (10 пользователей)</h3>
-                        <ul>
-                            <li>Длительность: 1 минута</li>
-                            <li>Среднее время отклика: 1.5 сек</li>
-                            <li>Успешность: 100%</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Тест 2: Стресс-тест (50 пользователей)</h3>
-                        <ul>
-                            <li>Длительность: 5 минут</li>
-                            <li>Среднее время отклика: 2.3 сек</li>
-                            <li>Успешность: 99.2%</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="stat-card" style="margin-top: 30px; text-align: center;">
-                    <div class="number">50</div>
-                    <div class="label">Максимальная нагрузка (одновременных пользователей)</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 11: Производительность (Core Web Vitals) -->
+        <!-- Slide 10: Производительность (Core Web Vitals) -->
         <div class="slide">
             <h2>Производительность (Core Web Vitals)</h2>
             <div style="margin-top: 30px; font-size: 1.2em;">
-                <p style="margin-bottom: 30px;">Все метрики находятся в <span class="highlight">зелёной зоне</span>:</p>
+                <p style="margin-bottom: 30px;">Метрики проверены через Chrome DevTools и находятся в <span class="highlight">зелёной зоне</span>:</p>
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <div class="number">1.2s</div>
-                        <div class="label">FCP (First Contentful Paint)</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="number">2.1s</div>
+                        <div class="number">0.86s</div>
                         <div class="label">LCP (Largest Contentful Paint)</div>
                     </div>
                     <div class="stat-card">
-                        <div class="number">45ms</div>
-                        <div class="label">FID (First Input Delay)</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="number">0.08</div>
+                        <div class="number">0</div>
                         <div class="label">CLS (Cumulative Layout Shift)</div>
                     </div>
                 </div>
                 <div style="margin-top: 30px; padding: 20px; background: #e8f5e9; border-radius: 10px;">
-                    <p><strong>Вывод:</strong> Приложение демонстрирует отличные показатели производительности согласно современным стандартам.</p>
+                    <p><strong>Вывод:</strong> Приложение демонстрирует отличные показатели производительности согласно современным стандартам Google.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 12: Безопасность -->
+        <!-- Slide 11: Безопасность -->
         <div class="slide">
             <h2>Безопасность</h2>
             <div style="margin-top: 30px; font-size: 1.3em;">
@@ -581,7 +535,7 @@
             </div>
         </div>
 
-        <!-- Slide 13: Общая оценка качества -->
+        <!-- Slide 12: Общая оценка качества -->
         <div class="slide">
             <h2>Общая оценка качества</h2>
             <div style="margin-top: 30px; font-size: 1.2em;">
@@ -593,7 +547,7 @@
                     </div>
                     <div>
                         <h3>⚡ Производительность</h3>
-                        <p>Все метрики в зелёной зоне</p>
+                        <p>Core Web Vitals в норме</p>
                         <span class="badge badge-success">Отлично</span>
                     </div>
                     <div>
@@ -613,37 +567,74 @@
                     </div>
                     <div>
                         <h3>💪 Надёжность</h3>
-                        <p>99.2% успешных запросов</p>
+                        <p>Стабильная работа функций</p>
                         <span class="badge badge-success">Отлично</span>
                     </div>
                 </div>
-                <div style="margin-top: 40px; padding: 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px; text-align: center;">
+                <div style="margin-top: 40px; padding: 25px; background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%); color: white; border-radius: 10px; text-align: center;">
                     <h3 style="color: white;">Общая оценка: Качественный продукт, готовый к использованию</h3>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 14: Рекомендации -->
+        <!-- Slide 13: Рекомендации -->
         <div class="slide">
             <h2>Рекомендации по улучшению</h2>
             <div style="margin-top: 30px; font-size: 1.2em;">
-                <h3>По производительности:</h3>
-                <ul>
-                    <li>Ускорить поиск продуктов (сейчас 2.1-2.3 сек, рекомендуется <1 сек)</li>
-                    <li>Улучшить стабильность верстки (CLS = 0.08 → 0.05)</li>
-                    <li>Подготовить систему к большему количеству пользователей</li>
-                </ul>
-                <h3 style="margin-top: 30px;">По пользовательскому опыту:</h3>
+                <h3>По пользовательскому опыту:</h3>
                 <ul>
                     <li>Улучшить мобильную версию</li>
                     <li>Оптимизировать процесс добавления продуктов</li>
+                    <li>Ускорить поиск продуктов</li>
                 </ul>
                 <h3 style="margin-top: 30px;">По процессу тестирования:</h3>
                 <ul>
                     <li>Расширить покрытие автоматизированными тестами</li>
                     <li>Внедрить непрерывное тестирование</li>
-                    <li>Регулярное проведение нагрузочного тестирования</li>
                 </ul>
+            </div>
+        </div>
+
+        <!-- Slide 14: Скриншоты тестирования -->
+        <div class="slide">
+            <h2>Скриншоты тестирования</h2>
+            <div style="margin-top: 20px;">
+                <div class="screenshots-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
+                        <div style="font-size: 3em; margin-bottom: 10px;">📝</div>
+                        <p style="font-weight: bold; color: #7c3aed;">Регистрация</p>
+                        <p style="font-size: 0.9em; color: #666;">Создание аккаунта</p>
+                    </div>
+                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
+                        <div style="font-size: 3em; margin-bottom: 10px;">🔐</div>
+                        <p style="font-weight: bold; color: #7c3aed;">Авторизация</p>
+                        <p style="font-size: 0.9em; color: #666;">Вход в систему</p>
+                    </div>
+                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
+                        <div style="font-size: 3em; margin-bottom: 10px;">📊</div>
+                        <p style="font-weight: bold; color: #7c3aed;">Дневник питания</p>
+                        <p style="font-size: 0.9em; color: #666;">Добавление продуктов</p>
+                    </div>
+                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
+                        <div style="font-size: 3em; margin-bottom: 10px;">👤</div>
+                        <p style="font-weight: bold; color: #7c3aed;">Профиль</p>
+                        <p style="font-size: 0.9em; color: #666;">Данные пользователя</p>
+                    </div>
+                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
+                        <div style="font-size: 3em; margin-bottom: 10px;">⚡</div>
+                        <p style="font-weight: bold; color: #7c3aed;">Core Web Vitals</p>
+                        <p style="font-size: 0.9em; color: #666;">LCP: 0.86s, CLS: 0</p>
+                    </div>
+                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
+                        <div style="font-size: 3em; margin-bottom: 10px;">📋</div>
+                        <p style="font-weight: bold; color: #7c3aed;">Kanban в Miro</p>
+                        <p style="font-size: 0.9em; color: #666;">Управление тест-кейсами</p>
+                    </div>
+                </div>
+                <div style="margin-top: 25px; padding: 15px; background: #e8f5e9; border-radius: 10px; text-align: center;">
+                    <p><strong>Все скриншоты доступны в приложении к работе</strong></p>
+                    <a href="screenshots.html" target="_blank" style="display: inline-block; margin-top: 15px; background: #7c3aed; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold;">📸 Открыть приложение со скриншотами</a>
+                </div>
             </div>
         </div>
 
