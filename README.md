@@ -491,7 +491,7 @@ https://miro.com/app/board/uXjVICd_Rwg=/
 
 7. Core Web Vitals Guide [Электронный ресурс]. — Режим доступа: https://web.dev/vitals/ (дата обращения: 19.09.2025).
 
-8. Myers, G. J. The Art of Software Testing / G. J. Myers, C. Sandler, T. Badgett. — 3rd ed. — Hoboken: John Wiley & Sons, 2012. — 240 p.
+8. Myers, G. J. The Art of Software Testing / G. J. Myers, C. Sandler, T. Badgett. — 3rd ed. — Hoboken: John Wiley & Sons, 2012. — 240 p. Методология Майерса — подход к тестированию ПО, сфокусированный на поиске дефектов. Основные принципы: цель тестирования — найти ошибки, а не доказать отсутствие проблем; систематический подход к тестированию; классификация дефектов по серьёзности (Severity) и приоритету (Priority); чёткое документирование дефектов с описанием шагов воспроизведения.
 
 9. IEEE Standard 829-2008 IEEE Standard for Software and System Test Documentation. — New York: IEEE, 2008. — 150 p.
 
