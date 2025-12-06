@@ -507,6 +507,8 @@ https://miro.com/app/board/uXjVICd_Rwg=/
 
 Интерактивная HTML-презентация доступна по адресу: [Открыть презентацию](https://vasilissa-cod.github.io/Diploma-project-presentation/)
 
+Страница со скриншотами тестирования доступна по адресу: [Открыть страницу со скриншотами](https://vasilissa-cod.github.io/Diploma-project-presentation/screenshots.html)
+
 
 
 
