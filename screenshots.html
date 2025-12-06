@@ -27,7 +27,18 @@
         .screenshot-card {
             background: white; border-radius: 15px; overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            order: var(--order);
         }
+        .screenshot-card:nth-child(1) { --order: 1; }
+        .screenshot-card:nth-child(2) { --order: 2; }
+        .screenshot-card:nth-child(3) { --order: 3; }
+        .screenshot-card:nth-child(4) { --order: 4; }
+        .screenshot-card:nth-child(5) { --order: 5; }
+        .screenshot-card:nth-child(6) { --order: 6; }
+        .screenshot-card:nth-child(7) { --order: 7; }
+        .screenshot-card:nth-child(8) { --order: 8; }
+        .screenshot-card:nth-child(9) { --order: 9; }
+        .screenshot-card:nth-child(10) { --order: 10; }
         .screenshot-header {
             background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
             color: white; padding: 15px 20px;
@@ -192,3 +203,5 @@
     </div>
 </body>
 </html>
+
+
