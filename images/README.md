@@ -15,15 +15,5 @@
 9. **Работа с DevTools** — `09-devtools.png`
 10. **Kanban-доска в Miro** — `03-kanban-miro.png`
 
-## Как добавить изображения
 
-1. Сохраните скриншоты с указанными выше именами
-2. Скопируйте их в папку `images/`
-3. Сделайте commit и push в GitHub
-
-```bash
-git add images/
-git commit -m "Add screenshots"
-git push
-```
 
