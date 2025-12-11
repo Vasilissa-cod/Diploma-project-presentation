@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
             color: #333;
             overflow: hidden;
         }
@@ -54,28 +54,28 @@
 
         h1 {
             font-size: 3em;
-            color: #7c3aed;
+            color: #dc2626;
             margin-bottom: 30px;
             text-align: center;
         }
 
         h2 {
             font-size: 2.5em;
-            color: #a855f7;
+            color: #ef4444;
             margin-bottom: 25px;
-            border-bottom: 3px solid #7c3aed;
+            border-bottom: 3px solid #dc2626;
             padding-bottom: 10px;
         }
 
         h3 {
             font-size: 1.8em;
-            color: #7c3aed;
+            color: #dc2626;
             margin: 20px 0 15px 0;
         }
 
         .title-slide {
             text-align: center;
-            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
             color: white;
             padding: 80px;
         }
@@ -115,7 +115,7 @@
             content: "✓";
             position: absolute;
             left: 0;
-            color: #7c3aed;
+            color: #dc2626;
             font-weight: bold;
             font-size: 1.3em;
         }
@@ -128,7 +128,7 @@
         }
 
         .stat-card {
-            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
             color: white;
             padding: 30px;
             border-radius: 15px;
@@ -159,7 +159,7 @@
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            border-left: 4px solid #7c3aed;
+            border-left: 4px solid #dc2626;
             transition: transform 0.3s;
         }
 
@@ -186,13 +186,13 @@
             cursor: pointer;
             font-size: 1em;
             font-weight: bold;
-            color: #7c3aed;
+            color: #dc2626;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             transition: all 0.3s;
         }
 
         .nav-btn:hover {
-            background: #7c3aed;
+            background: #dc2626;
             color: white;
             transform: translateY(-2px);
         }
@@ -210,12 +210,12 @@
             padding: 10px 20px;
             border-radius: 20px;
             font-weight: bold;
-            color: #7c3aed;
+            color: #dc2626;
             z-index: 1000;
         }
 
         .highlight {
-            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            background: linear-gradient(120deg, #fecaca 0%, #fca5a5 100%);
             padding: 2px 8px;
             border-radius: 4px;
             font-weight: bold;
@@ -250,6 +250,18 @@
             grid-template-columns: 1fr 1fr;
             gap: 30px;
             margin: 20px 0;
+        }
+
+        .test-case-item {
+            padding: 15px;
+            background: #fef2f2;
+            border-radius: 10px;
+            border-left: 4px solid #dc2626;
+            margin-bottom: 10px;
+        }
+
+        .test-case-item strong {
+            color: #dc2626;
         }
 
         @media (max-width: 768px) {
@@ -296,7 +308,7 @@
         <div class="slide">
             <h2>Цель работы</h2>
             <p style="font-size: 1.5em; line-height: 1.8; margin-top: 40px;">
-                Проведение <span class="highlight">тестирования</span> приложения FatSecret для обеспечения качества программного продукта и выявления потенциальных дефектов.
+                Проведение <span class="highlight">комплексного тестирования</span> приложения FatSecret для обеспечения качества программного продукта и выявления потенциальных дефектов.
             </p>
             <div style="margin-top: 50px; font-size: 1.2em;">
                 <p><strong>Основные направления:</strong></p>
@@ -330,10 +342,10 @@
                 <div style="margin-top: 40px;">
                     <h3>Тестируемая платформа:</h3>
                     <ul>
-                        <li>Веб-приложение: <a href="https://foods.fatsecret.com/" target="_blank" style="color: #7c3aed;">https://foods.fatsecret.com/</a></li>
+                        <li>Веб-приложение: <a href="https://foods.fatsecret.com/" target="_blank" style="color: #dc2626;">https://foods.fatsecret.com/</a></li>
                     </ul>
                 </div>
-                <div style="margin-top: 40px; padding: 20px; background: #f0f0f0; border-radius: 10px;">
+                <div style="margin-top: 40px; padding: 20px; background: #fef2f2; border-radius: 10px;">
                     <p><strong>Назначение:</strong> Помощь пользователям в контроле питания, отслеживании физической активности и достижении целей по весу.</p>
                 </div>
             </div>
@@ -369,7 +381,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h3>☎️ Социальные функции</h3>
+                    <h3>👥 Социальные функции</h3>
                     <ul>
                         <li>Создание профиля</li>
                         <li>Общение с пользователями</li>
@@ -386,14 +398,14 @@
                 <h3>Многоуровневый подход:</h3>
                 <ul style="font-size: 1.1em;">
                     <li>Функциональное тестирование основных возможностей</li>
-                    <li>Нефункциональное тестирование (безопасность, совместимость)</li>
+                    <li>Нефункциональное тестирование (производительность, безопасность)</li>
                     <li>Автоматизированное тестирование критических путей</li>
                     <li>Мануальное тестирование для проверки UX</li>
                 </ul>
-                <div style="margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%); color: white; border-radius: 10px;">
+                <div style="margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%); color: white; border-radius: 10px;">
                     <h3 style="color: white; margin-bottom: 15px;">Приоритизация:</h3>
                     <p>Критические функции → Автоматизированное тестирование (Java, Selenide, JUnit 5)</p>
-                    <p>Безопасность и совместимость → Мануальное тестирование</p>
+                    <p>Безопасность и UX → Мануальное тестирование</p>
                 </div>
             </div>
         </div>
@@ -419,10 +431,6 @@
                     <p>Генерация отчётов</p>
                 </div>
                 <div class="tool-item">
-                    <h3>🔍 Chrome DevTools</h3>
-                    <p>Технический анализ</p>
-                </div>
-                <div class="tool-item">
                     <h3>📋 Miro</h3>
                     <p>Управление задачами</p>
                 </div>
@@ -433,7 +441,7 @@
             </div>
         </div>
 
-        <!-- Slide 8: Результаты мануального тестирования -->
+        <!-- Slide 8: Результаты мануального тестирования - статистика -->
         <div class="slide">
             <h2>Результаты мануального тестирования</h2>
             <div class="stats-grid" style="margin-top: 30px;">
@@ -442,11 +450,11 @@
                     <div class="label">Тест-кейсов</div>
                 </div>
                 <div class="stat-card">
-                    <div class="number">9</div>
+                    <div class="number">10</div>
                     <div class="label">Пройдено успешно</div>
                 </div>
                 <div class="stat-card">
-                    <div class="number">90%</div>
+                    <div class="number">100%</div>
                     <div class="label">Успешность</div>
                 </div>
                 <div class="stat-card">
@@ -454,19 +462,76 @@
                     <div class="label">Оценка UX</div>
                 </div>
             </div>
-            <div style="margin-top: 40px; font-size: 1.2em;">
-                <h3>Основные тест-кейсы:</h3>
-                <ul>
-                    <li>TC-MAN001: Регистрация пользователя</li>
-                    <li>TC-MAN002: Авторизация пользователя</li>
-                    <li>TC-MAN003: Добавление продукта в дневник</li>
-                    <li>TC-MAN004: Поиск продуктов</li>
-                    <li>TC-MAN005: Отслеживание веса</li>
-                </ul>
+            <div style="margin-top: 30px; padding: 20px; background: #fef2f2; border-radius: 10px;">
+                <p style="font-size: 1.2em;"><strong>Типы тестирования:</strong> Функциональное (9), Производительность (2), Безопасность (1)</p>
             </div>
         </div>
 
-        <!-- Slide 9: Результаты автоматизированного тестирования -->
+        <!-- Slide 9: Тест-кейсы (часть 1) -->
+        <div class="slide">
+            <h2>Мануальные тест-кейсы (1-5)</h2>
+            <div style="margin-top: 20px;">
+                <div class="test-case-item">
+                    <strong>TC-MAN001:</strong> Регистрация пользователя
+                    <span class="badge badge-success">✅ Пройден</span>
+                    <p style="color: #666; margin-top: 5px;">Функциональный, Безопасность | Высокий приоритет</p>
+                </div>
+                <div class="test-case-item">
+                    <strong>TC-MAN002:</strong> Авторизация пользователя
+                    <span class="badge badge-success">✅ Пройден</span>
+                    <p style="color: #666; margin-top: 5px;">Функциональный | Высокий приоритет</p>
+                </div>
+                <div class="test-case-item">
+                    <strong>TC-MAN003:</strong> Добавление продукта в дневник
+                    <span class="badge badge-success">✅ Пройден</span>
+                    <p style="color: #666; margin-top: 5px;">Функциональный | Высокий приоритет</p>
+                </div>
+                <div class="test-case-item">
+                    <strong>TC-MAN004:</strong> Поиск продуктов
+                    <span class="badge badge-success">✅ Пройден</span>
+                    <p style="color: #666; margin-top: 5px;">Функциональный, Производительность | Средний приоритет | 🐛 BUG-001</p>
+                </div>
+                <div class="test-case-item">
+                    <strong>TC-MAN005:</strong> Отслеживание веса
+                    <span class="badge badge-success">✅ Пройден</span>
+                    <p style="color: #666; margin-top: 5px;">Функциональный | Средний приоритет</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Тест-кейсы (часть 2) -->
+        <div class="slide">
+            <h2>Мануальные тест-кейсы (6-10)</h2>
+            <div style="margin-top: 20px;">
+                <div class="test-case-item">
+                    <strong>TC-MAN006:</strong> Производительность загрузки
+                    <span class="badge badge-success">✅ Пройден</span>
+                    <p style="color: #666; margin-top: 5px;">Производительность | Высокий приоритет</p>
+                </div>
+                <div class="test-case-item">
+                    <strong>TC-MAN007:</strong> Редактирование записей в дневнике
+                    <span class="badge badge-success">✅ Пройден</span>
+                    <p style="color: #666; margin-top: 5px;">Функциональный | Средний приоритет</p>
+                </div>
+                <div class="test-case-item">
+                    <strong>TC-MAN008:</strong> Удаление записей из дневника
+                    <span class="badge badge-success">✅ Пройден</span>
+                    <p style="color: #666; margin-top: 5px;">Функциональный | Средний приоритет</p>
+                </div>
+                <div class="test-case-item">
+                    <strong>TC-MAN009:</strong> Просмотр раздела Рецепты
+                    <span class="badge badge-success">✅ Пройден</span>
+                    <p style="color: #666; margin-top: 5px;">Функциональный | Средний приоритет</p>
+                </div>
+                <div class="test-case-item">
+                    <strong>TC-MAN010:</strong> Просмотр раздела Фитнес
+                    <span class="badge badge-success">✅ Пройден</span>
+                    <p style="color: #666; margin-top: 5px;">Функциональный | Средний приоритет</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Результаты автоматизированного тестирования -->
         <div class="slide">
             <h2>Результаты автоматизированного тестирования</h2>
             <div class="stats-grid" style="margin-top: 30px;">
@@ -494,33 +559,12 @@
             </div>
         </div>
 
-        <!-- Slide 10: Производительность (Core Web Vitals) -->
-        <div class="slide">
-            <h2>Производительность (Core Web Vitals)</h2>
-            <div style="margin-top: 30px; font-size: 1.2em;">
-                <p style="margin-bottom: 30px;">Метрики проверены через Chrome DevTools и находятся в <span class="highlight">зелёной зоне</span>:</p>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="number">0.86s</div>
-                        <div class="label">LCP (Largest Contentful Paint)</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="number">0</div>
-                        <div class="label">CLS (Cumulative Layout Shift)</div>
-                    </div>
-                </div>
-                <div style="margin-top: 30px; padding: 20px; background: #e8f5e9; border-radius: 10px;">
-                    <p><strong>Вывод:</strong> Приложение демонстрирует отличные показатели производительности согласно современным стандартам Google.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 11: Безопасность -->
+        <!-- Slide 12: Безопасность -->
         <div class="slide">
             <h2>Безопасность</h2>
             <div style="margin-top: 30px; font-size: 1.3em;">
-                <div style="padding: 30px; background: #e3f2fd; border-radius: 10px; margin-bottom: 20px;">
-                    <h3 style="color: #1976d2;">🔒 Современные стандарты безопасности</h3>
+                <div style="padding: 30px; background: #fef2f2; border-radius: 10px; margin-bottom: 20px;">
+                    <h3 style="color: #dc2626;">🔒 Современные стандарты безопасности</h3>
                     <ul style="margin-top: 20px;">
                         <li><strong>TLS 1.3</strong> — протокол шифрования</li>
                         <li><strong>HTTPS</strong> — защищённое соединение</li>
@@ -534,19 +578,19 @@
             </div>
         </div>
 
-        <!-- Slide 12: Общая оценка качества -->
+        <!-- Slide 13: Общая оценка качества -->
         <div class="slide">
             <h2>Общая оценка качества</h2>
             <div style="margin-top: 30px; font-size: 1.2em;">
                 <div class="two-column">
                     <div>
                         <h3>✅ Функциональная пригодность</h3>
-                        <p>90-100% успешность тестов</p>
+                        <p>100% успешность тестов</p>
                         <span class="badge badge-success">Отлично</span>
                     </div>
                     <div>
                         <h3>⚡ Производительность</h3>
-                        <p>Core Web Vitals в норме</p>
+                        <p>Быстрая загрузка страниц</p>
                         <span class="badge badge-success">Отлично</span>
                     </div>
                     <div>
@@ -570,69 +614,28 @@
                         <span class="badge badge-success">Отлично</span>
                     </div>
                 </div>
-                <div style="margin-top: 40px; padding: 25px; background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%); color: white; border-radius: 10px; text-align: center;">
+                <div style="margin-top: 40px; padding: 25px; background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%); color: white; border-radius: 10px; text-align: center;">
                     <h3 style="color: white;">Общая оценка: Качественный продукт, готовый к использованию</h3>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 13: Рекомендации -->
+        <!-- Slide 14: Рекомендации -->
         <div class="slide">
             <h2>Рекомендации по улучшению</h2>
             <div style="margin-top: 30px; font-size: 1.2em;">
-                <h3>По пользовательскому опыту:</h3>
+                <h3>По производительности:</h3>
+                <ul>
+                    <li>Оптимизировать время отклика поиска продуктов</li>
+                </ul>
+                <h3 style="margin-top: 30px;">По пользовательскому опыту:</h3>
                 <ul>
                     <li>Улучшить мобильную версию</li>
                     <li>Оптимизировать процесс добавления продуктов</li>
-                    <li>Ускорить поиск продуктов</li>
+                    <li>Расширить базу данных продуктов</li>
                 </ul>
-                <h3 style="margin-top: 30px;">По процессу тестирования:</h3>
-                <ul>
-                    <li>Расширить покрытие автоматизированными тестами</li>
-                    <li>Внедрить непрерывное тестирование</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Slide 14: Скриншоты тестирования -->
-        <div class="slide">
-            <h2>Скриншоты тестирования</h2>
-            <div style="margin-top: 20px;">
-                <div class="screenshots-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
-                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
-                        <div style="font-size: 3em; margin-bottom: 10px;">📝</div>
-                        <p style="font-weight: bold; color: #7c3aed;">Регистрация</p>
-                        <p style="font-size: 0.9em; color: #666;">Создание аккаунта</p>
-                    </div>
-                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
-                        <div style="font-size: 3em; margin-bottom: 10px;">🔐</div>
-                        <p style="font-weight: bold; color: #7c3aed;">Авторизация</p>
-                        <p style="font-size: 0.9em; color: #666;">Вход в систему</p>
-                    </div>
-                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
-                        <div style="font-size: 3em; margin-bottom: 10px;">📊</div>
-                        <p style="font-weight: bold; color: #7c3aed;">Дневник питания</p>
-                        <p style="font-size: 0.9em; color: #666;">Добавление продуктов</p>
-                    </div>
-                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
-                        <div style="font-size: 3em; margin-bottom: 10px;">✨</div>
-                        <p style="font-weight: bold; color: #7c3aed;">Профиль</p>
-                        <p style="font-size: 0.9em; color: #666;">Данные пользователя</p>
-                    </div>
-                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
-                        <div style="font-size: 3em; margin-bottom: 10px;">⚡</div>
-                        <p style="font-weight: bold; color: #7c3aed;">Core Web Vitals</p>
-                        <p style="font-size: 0.9em; color: #666;">LCP: 0.86s, CLS: 0</p>
-                    </div>
-                    <div class="screenshot-item" style="text-align: center; padding: 15px; background: #f8f4ff; border-radius: 10px; border: 2px solid #7c3aed;">
-                        <div style="font-size: 3em; margin-bottom: 10px;">📋</div>
-                        <p style="font-weight: bold; color: #7c3aed;">Kanban в Miro</p>
-                        <p style="font-size: 0.9em; color: #666;">Управление тест-кейсами</p>
-                    </div>
-                </div>
-                <div style="margin-top: 25px; padding: 15px; background: #e8f5e9; border-radius: 10px; text-align: center;">
-                    <p><strong>Все скриншоты доступны в приложении к работе</strong></p>
-                    <a href="screenshots.html" target="_blank" style="display: inline-block; margin-top: 15px; background: #7c3aed; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold;">📸 Открыть приложение со скриншотами</a>
+                <div style="margin-top: 30px; padding: 20px; background: #fef2f2; border-radius: 10px; border-left: 4px solid #dc2626;">
+                    <p><strong>🐛 Найден 1 дефект:</strong> BUG-001 — Поиск продуктов можно ускорить (S3 Major, P2 Средний)</p>
                 </div>
             </div>
         </div>
@@ -643,10 +646,15 @@
             <div class="subtitle" style="margin-top: 50px;">
                 <p>Цель работы достигнута</p>
                 <p style="margin-top: 30px; font-size: 1.2em;">
-                    Проведено тестирование приложения FatSecret с использованием современных инструментов и методологий
+                    Проведено комплексное тестирование приложения FatSecret
+                </p>
+                <p style="margin-top: 20px; font-size: 1.1em;">
+                    ✅ 10 мануальных тестов (100% успешно)<br>
+                    ✅ 5 автоматизированных тестов (100% успешно)<br>
+                    ✅ 1 дефект задокументирован
                 </p>
                 <p style="margin-top: 40px; font-size: 1.1em; opacity: 0.8;">
-                    Выявлены дефекты и дана оценка качества приложения
+                    Приложение FatSecret — качественный продукт, готовый к использованию
                 </p>
             </div>
         </div>
@@ -701,11 +709,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
