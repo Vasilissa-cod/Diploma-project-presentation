@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение: Скриншоты тестирования FatSecret</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 { color: white; text-align: center; font-size: 2.5em; margin-bottom: 40px; }
+        .back-link {
+            display: inline-block; background: white; color: #7c3aed;
+            padding: 12px 25px; border-radius: 25px; text-decoration: none;
+            font-weight: bold; margin-bottom: 30px;
+        }
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+        }
+        .screenshot-card {
+            background: white; border-radius: 15px; overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            order: var(--order);
+        }
+        .screenshot-card:nth-child(1) { --order: 1; }
+        .screenshot-card:nth-child(2) { --order: 2; }
+        .screenshot-card:nth-child(3) { --order: 3; }
+        .screenshot-card:nth-child(4) { --order: 4; }
+        .screenshot-card:nth-child(5) { --order: 5; }
+        .screenshot-card:nth-child(6) { --order: 6; }
+        .screenshot-card:nth-child(7) { --order: 7; }
+        .screenshot-card:nth-child(8) { --order: 8; }
+        .screenshot-card:nth-child(9) { --order: 9; }
+        .screenshot-card:nth-child(10) { --order: 10; }
+        .screenshot-header {
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            color: white; padding: 15px 20px;
+        }
+        .screenshot-header h3 { font-size: 1.3em; margin-bottom: 5px; }
+        .screenshot-header p { opacity: 0.9; font-size: 0.95em; }
+        .screenshot-image { width: 100%; height: auto; display: block; }
+        .screenshot-description { padding: 20px; color: #555; line-height: 1.6; }
+        .badge {
+            display: inline-block; padding: 4px 12px; border-radius: 15px;
+            font-size: 0.8em; font-weight: bold; margin-right: 8px;
+        }
+        .badge-func { background: #4caf50; color: white; }
+        .badge-perf { background: #2196f3; color: white; }
+        .badge-ux { background: #9c27b0; color: white; }
+        .footer { text-align: center; margin-top: 50px; color: white; opacity: 0.8; }
+        @media (max-width: 768px) { .screenshots-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Вернуться к презентации</a>
+        <h1>📸 Приложение: Скриншоты тестирования</h1>
+
+        <div class="screenshots-grid">
+            <!-- 1. Главная страница сайта -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>1. Главная страница сайта</h3>
+                    <p>Лендинг FatSecret</p>
+                </div>
+                <img src="images/02-homepage.png" alt="Homepage" class="screenshot-image">
+                <div class="screenshot-description">
+                    <span class="badge badge-ux">UX</span>
+                    <p style="margin-top: 10px;">Первая страница сайта fatsecret.com с описанием возможностей.</p>
+                </div>
+            </div>
+
+            <!-- 2. Страница входа -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>2. Страница входа</h3>
+                    <p>Форма авторизации</p>
+                </div>
+                <img src="images/04-login-page.png" alt="Login" class="screenshot-image">
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <p style="margin-top: 10px;">Страница входа в аккаунт FatSecret.</p>
+                </div>
+            </div>
+
+            <!-- 3. Создание аккаунта -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>3. Создание аккаунта</h3>
+                    <p>TC001: Регистрация пользователя</p>
+                </div>
+                <img src="images/05-registration.png" alt="Registration" class="screenshot-image">
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <p style="margin-top: 10px;">Форма создания нового аккаунта с email и Google авторизацией.</p>
+                </div>
+            </div>
+
+            <!-- 4. Авторизация пользователя -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>4. Авторизация пользователя</h3>
+                    <p>TC002: Вход в систему</p>
+                </div>
+                <img src="images/08-authorization.png" alt="Authorization" class="screenshot-image">
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <p style="margin-top: 10px;">Процесс авторизации пользователя в системе.</p>
+                </div>
+            </div>
+
+            <!-- 5. Настройка аккаунта -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>5. Настройка аккаунта</h3>
+                    <p>Onboarding при регистрации</p>
+                </div>
+                <img src="images/06-onboarding.png" alt="Onboarding" class="screenshot-image">
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <span class="badge badge-ux">UX</span>
+                    <p style="margin-top: 10px;">Настройка профиля: рост, вес, дата рождения, уровень активности.</p>
+                </div>
+            </div>
+
+            <!-- 6. Индивидуальный расчёт калорий -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>6. Индивидуальный расчёт калорий</h3>
+                    <p>RDI — рекомендуемая норма</p>
+                </div>
+                <img src="images/07-rdi-setup.png" alt="RDI" class="screenshot-image">
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <p style="margin-top: 10px;">Расчёт индивидуальной нормы калорий на основе параметров пользователя.</p>
+                </div>
+            </div>
+
+            <!-- 7. Главная страница открытого аккаунта -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>7. Главная страница открытого аккаунта</h3>
+                    <p>Dashboard авторизованного пользователя</p>
+                </div>
+                <img src="images/01-dashboard.png" alt="Dashboard" class="screenshot-image">
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <p style="margin-top: 10px;">Главная страница My FatSecret после входа: календарь, калории, вес и лента активности.</p>
+                </div>
+            </div>
+
+            <!-- 8. Дневник питания -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>8. Дневник питания</h3>
+                    <p>TC003, TC004: Добавление продуктов</p>
+                </div>
+                <img src="images/10-food-diary.png" alt="Food Diary" class="screenshot-image">
+                <div class="screenshot-description">
+                    <span class="badge badge-func">Функциональное</span>
+                    <p style="margin-top: 10px;">Дневник питания с добавлением нового продукта. Калории, БЖУ.</p>
+                </div>
+            </div>
+
+            <!-- 9. Работа с DevTools -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>9. Работа с DevTools</h3>
+                    <p>Проверка производительности</p>
+                </div>
+                <img src="images/09-devtools.png" alt="DevTools" class="screenshot-image">
+                <div class="screenshot-description">
+                    <span class="badge badge-perf">Производительность</span>
+                    <p style="margin-top: 10px;">Chrome DevTools: LCP = 0.86s, CLS = 0. Метрики в зелёной зоне.</p>
+                </div>
+            </div>
+
+            <!-- 10. Kanban-доска в Miro -->
+            <div class="screenshot-card">
+                <div class="screenshot-header">
+                    <h3>10. Kanban-доска в Miro</h3>
+                    <p>Управление тест-кейсами</p>
+                </div>
+                <img src="images/03-kanban-miro.png" alt="Kanban" class="screenshot-image">
+                <div class="screenshot-description">
+                    <span class="badge badge-ux">Управление</span>
+                    <p style="margin-top: 10px;">Kanban-доска: Product Backlog, Sprint Backlog, In Progress, Testing, Done.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Тестирование веб-приложения FatSecret — 2025</p>
+            <p style="margin-top: 10px;">Пухтель Лия Николаевна</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
