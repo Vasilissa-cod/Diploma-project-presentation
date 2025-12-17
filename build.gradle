@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
     implementation("org.seleniumhq.selenium:selenium-java:4.39.0")
+    testImplementation 'com.codeborne:selenide:7.0.4'
 
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
