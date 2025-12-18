@@ -1,16 +1,16 @@
+import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class FatsecretTest {
+public class FatsecretTestSelenide {
 
     // Учетные данные для входа
     private static final String USERNAME = "sbayg@comfythings.com";
@@ -108,4 +108,3 @@ public class FatsecretTest {
         }
     }
 }
-
