@@ -234,7 +234,7 @@ FatSecret - это бесплатное приложение для отслеж
 - Done - завершенные задачи
 
 **Ссылка на канбан-доску:**
-https://miro.com/app/board/uXjVICd_Rwg=/
+ [Открыть страницу со скриншотами](https://vasilissa-cod.github.io/Diploma-project-presentation/screenshots.html)
 
 ---
 
