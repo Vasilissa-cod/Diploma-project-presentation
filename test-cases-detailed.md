@@ -215,7 +215,7 @@
 | --- | --- | --- | --- |
 | BUG-001 | Поиск продуктов можно ускорить | S3 Неначительный (Minor) | P2 Средний |
 
-<a id="bug-001-detail"></a>[🔗](#bug-001-detail) **Детализация BUG-001 ([ссылка](https://github.com/Vasilissa-cod/Diploma-project-presentation/blob/main/test-cases-detailed.md#tc-man004-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%BE%D0%B2)) :**  
+<a id="bug-001-detail"></a>[🔗](#bug-001-detail) **Детализация BUG-001**  
 - **Шаги воспроизведения:**  
   1) Авторизоваться на https://foods.fatsecret.com.  
   2) Перейти в поиск продуктов (`Diary.aspx?pa=fj`).  
