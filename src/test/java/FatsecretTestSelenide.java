@@ -1,13 +1,17 @@
+import com.codeborne.selenide.Configuration;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import java.time.Duration;
+import static com.codeborne.selenide.Condition.enabled;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+import static com.codeborne.selenide.WebDriverConditions.urlContaining;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class FatsecretTestSelenide {
@@ -18,6 +22,10 @@ public class FatsecretTestSelenide {
 
     @BeforeEach
     void setUp() {
+        // Ускоряем загрузку тяжёлых страниц: ждём только DOMContentLoaded
+        Configuration.pageLoadStrategy = "eager";
+        Configuration.timeout = 15000;
+
         open("https://foods.fatsecret.com/");
         getWebDriver().manage().window().maximize();
     }
@@ -91,20 +99,24 @@ public class FatsecretTestSelenide {
     // Вспомогательный метод для авторизации (если не залогинен)
     private void performLoginIfNeeded() {
         open("https://foods.fatsecret.com/Auth.aspx?pa=s&ReturnUrl=https%3a%2f%2ffoods.fatsecret.com%2fDefault.aspx%3fpa%3dm");
-        sleep(2000);
         String currentUrl = webdriver().driver().url();
         // Если уже залогинен (редирект на главную), пропускаем авторизацию
         if (currentUrl.contains("Default.aspx") && !currentUrl.contains("Auth.aspx")) {
             return;
         }
-        // Если форма авторизации присутствует, выполняем вход
-        try {
-            $x("//input[@id='ctl11_Logincontrol1_Name']").shouldBe(visible).setValue(USERNAME);
-            $x("//input[@id='ctl11_Logincontrol1_Password']").shouldBe(visible).setValue(PASSWORD);
-            $x("//input[@id='ctl11_Logincontrol1_Login']").click();
-            sleep(3000);
-        } catch (Exception e) {
-            // Если элементы не найдены, возможно уже залогинен
-        }
+
+        // Явные ожидания вместо sleep: страница логина может грузиться дольше 4 с
+        $x("//input[@id='ctl11_Logincontrol1_Name']")
+                .shouldBe(visible, Duration.ofSeconds(10))
+                .setValue(USERNAME);
+        $x("//input[@id='ctl11_Logincontrol1_Password']")
+                .shouldBe(visible, Duration.ofSeconds(10))
+                .setValue(PASSWORD);
+        $(By.id("ctl11_Logincontrol1_Login"))
+                .shouldBe(enabled, Duration.ofSeconds(10))
+                .click();
+
+        // Дожидаемся завершения логина, чтобы не уйти дальше с незалогиненной сессией
+        webdriver().shouldHave(urlContaining("Default.aspx"), Duration.ofSeconds(10));
     }
 }
