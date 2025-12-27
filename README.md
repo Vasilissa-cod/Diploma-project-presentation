@@ -320,7 +320,7 @@ FatSecret - это бесплатное приложение для отслеж
 - **Описание:** Поиск продуктов можно ускорить
 - **Серьёзность:** S3 Незначительный (Minor)
 - **Приоритет:** P2 Средний
- [Открыть страницу с подробным баг-репортом](https://vasilissa-cod.github.io/Diploma-project-presentation/screenshots.html)
+ [Открыть страницу с подробным баг-репортом](https://github.com/Vasilissa-cod/Diploma-project-presentation/blob/main/test-cases-detailed.md#bug-001-detail)
 
 ### 4.5. Анализ результатов
 
